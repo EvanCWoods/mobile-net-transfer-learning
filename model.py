@@ -10,8 +10,8 @@ from tensorflow.keras.models import Sequential
 # Define the image shape and color channels
 IMAGE_SHAPE = (224,224)
 C_CHANNELS = 3
-name = goldfish
-path = 'goldfish.jpg'
+name = 'goldfish'
+path = f'/images/{name}.jpg'
 
 # Create the model
 classifier = tf.keras.Sequential([
