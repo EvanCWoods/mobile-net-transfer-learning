@@ -6,11 +6,14 @@ import tensorflow_hub as hub
 from tensorflow import keras
 from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential
+import random
 
 # Define the image shape and color channels
 IMAGE_SHAPE = (224,224)
 C_CHANNELS = 3
-name = 'goldfish'
+i = random.randint(0,1)
+names = ['goldfish', 'bald_eagle']
+name = names[i]
 path = f'/images/{name}.jpg'
 
 # Create the model
